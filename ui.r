@@ -16,13 +16,9 @@ shinyUI(fluidPage(
   # time-consuming.
   sidebarLayout(
     sidebarPanel(
-      selectInput("dataset", "Choose a dataset:",
-                  choices = c("rock", "pressure", "cars")),
 
       sliderInput("k", "Choose number of topics", 2, 50, 2 ),
-      sliderInput("n", "Choose number of words", 5, 30, 5, 5),
-
-      submitButton("Update View")
+      sliderInput("n", "Choose number of words", 5, 30, 15, 5)
     ),
 
     # Show a summary of the dataset and an HTML table with the

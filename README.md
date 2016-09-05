@@ -13,7 +13,7 @@ Reflects the common practice of working with topicmodels, that is exploring and 
 **First version only**
 
 - [ ] remove hard coded stuff
-- [ ] add reactivity to UI to make it auto update
+- [x] add reactivity to UI to make it auto update
 - [ ] reconsider visualization styles
 
 ## Acknowledgments

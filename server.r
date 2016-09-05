@@ -20,9 +20,16 @@ for( f in files ) {
 ## start server
 shinyServer(function(input, output) {
 
+  model <- reactive({
+    data[[ input$k ]]
+  })
+
+  wordcount <- reactive({
+    input$n
+  })
+
   output$view <- renderTable({
-    model <- data[[ input$k ]]
-    terms( model, input$n )
+    terms( model(), wordcount() )
   })
 
 })
